@@ -1,0 +1,163 @@
+/* Contact Section */
+.contact-section {
+  background: url("../assets/moon.jpg") no-repeat center center/cover;
+  color: white;
+  text-align: center;
+  padding: 100px 20px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.contact-row select {
+  flex: 0.4;
+  text-align: center;
+  background: gray; /* Change this to your desired color */
+  color:black; /* Text color */
+  border: none;
+  padding: 12px;
+  border-radius: 5px;
+  outline: none;
+  cursor: pointer;
+}
+
+/* On Focus */
+.contact-row select:focus {
+  background: rgba(255, 255, 255, 0.2); /* Lighter shade on focus */
+}
+
+/* Dark Overlay for Readability */
+.contact-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 1;
+}
+
+.contact-section * {
+  position: relative;
+  z-index: 2;
+}
+
+/* Title & Subtitle */
+.contact-section h1 {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.contact-section p {
+  font-size: 18px;
+  margin-bottom: 30px;
+  opacity: 0.9;
+}
+
+/* Contact Form */
+.contact-form {
+  background: rgba(0, 0, 0, 0.7);
+  padding: 25px;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1);
+}
+
+/* Input Fields */
+.contact-form input,
+.contact-form select,
+.contact-form textarea,
+.contact-form button {
+  width: 100%;
+  padding: 12px;
+  border-radius: 5px;
+  border: none;
+  font-size: 16px;
+  outline: none;
+}
+
+/* Input Styles */
+.contact-form input,
+.contact-form textarea {
+  background: gray;
+  color: black;
+  transition: 0.3s;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+/* Mobile Number Section */
+.contact-row {
+  display: flex;
+  gap: 10px;
+}
+
+.contact-row select {
+  flex: 0.4;
+  text-align: center;
+}
+
+.contact-row input {
+  flex: 1;
+}
+
+/* Submit Button */
+.contact-form button {
+  background: linear-gradient(90deg, #7f00ff, #e100ff);
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+  border: none;
+}
+
+.contact-form button:hover {
+  transform: scale(1.05);
+}
+
+/* Status Messages */
+.success-message,
+.error-message {
+  font-size: 14px;
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.success-message {
+  background: rgba(0, 255, 0, 0.8);
+  color: white;
+}
+
+.error-message {
+  background: rgba(255, 0, 0, 0.8);
+  color: white;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .contact-section {
+    padding: 80px 15px;
+  }
+
+  .contact-form {
+    padding: 20px;
+    width: 90%;
+  }
+
+  .contact-row {
+    flex-direction: column;
+  }
+}

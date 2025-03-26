@@ -1,0 +1,114 @@
+/* Footer Background Image Section */
+.footer-banner {
+  width: 100vw;
+  min-height: 120px; /* Further reduced height */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 10px;
+  
+}
+
+/* Contact Us Button */
+.contact-btn {
+  padding: 8px 16px;
+  font-size: 14px;
+  background: linear-gradient(90deg, #7f00ff, #e100ff);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.contact-btn:hover {
+  opacity: 0.8;
+}
+
+/* Footer Styles */
+.footer-container {
+  background: black;
+  padding: 20px 40px; /* Reduced padding */
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 30px;
+}
+
+/* Centering Footer Columns */
+.footer-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  max-width: 800px; /* Adjusted max width */
+  flex-wrap: wrap;
+}
+
+.footer-about,
+.footer-column,
+.footer-contacts {
+  flex: 1;
+  margin: 5px;
+  text-align: center;
+}
+/* Line below image */
+.footer-line {
+  width: calc(100% - 4cm); /* Subtract 2cm from both sides */
+  height: 2px;
+  background: rgb(77, 76, 76); /* Adjust color as needed */
+  margin: 10px auto; /* Centers the line */
+}
+
+/* Copyright Section */
+.footer-bottom {
+  text-align: center;
+  padding: 5px 0; /* Reduced padding */
+  color: #888;
+  font-size: 12px;
+  border-top: none;
+  width: 100%;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .footer-banner {
+    min-height: 100px;
+  }
+
+  .contact-btn {
+    font-size: 12px;
+    padding: 6px 12px;
+  }
+
+  .footer-links {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer-banner {
+    min-height: 80px;
+    background-size: contain;
+  }
+
+  .footer-container {
+    padding: 15px 30px; /* Further reduced padding */
+  }
+
+  .contact-btn {
+    font-size: 12px;
+    padding: 5px 10px;
+  }
+
+  .footer-links {
+    flex-direction: column;
+  }
+}
