@@ -1,6 +1,7 @@
 import React, { useRef } from "react";
 import { motion, useInView } from "framer-motion";
 import "./WorkProcess.css";
+import { jsx } from "react/jsx-runtime";
 
 const steps = [
   { title: "Empathize" },

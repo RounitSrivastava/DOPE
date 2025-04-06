@@ -14,7 +14,7 @@
 .contact-row select {
   flex: 0.4;
   text-align: center;
-  background: gray; /* Change this to your desired color */
+  background: white; /* Change this to your desired color */
   color:black; /* Text color */
   border: none;
   padding: 12px;
@@ -25,7 +25,7 @@
 
 /* On Focus */
 .contact-row select:focus {
-  background: rgba(255, 255, 255, 0.2); /* Lighter shade on focus */
+  background: white /* Lighter shade on focus */
 }
 
 /* Dark Overlay for Readability */
@@ -88,7 +88,7 @@
 /* Input Styles */
 .contact-form input,
 .contact-form textarea {
-  background: gray;
+  background:white;
   color: black;
   transition: 0.3s;
 }

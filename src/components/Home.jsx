@@ -31,7 +31,6 @@ const Home = () => {
         ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
         ctx.fill();
       }
-
       update() {
         this.x += this.speedX;
         this.y += this.speedY;
@@ -125,7 +124,7 @@ const Home = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, ease: "easeOut" }}
         >
-          Insights
+       PixCult
         </motion.h5>
 
         <motion.p 

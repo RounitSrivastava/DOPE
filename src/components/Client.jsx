@@ -31,15 +31,15 @@ const Client = () => {
   }, []);
 
   return (
-    <div className="testimonial-section" style={{ display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center", height: "100vh" }}>
-      <div className="testimonial-container" style={{ textAlign: "center", maxWidth: "600px" }}>
+    <div className="testimonial-section" style={{ display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center", padding: "35px 0" }}>
+      <div className="testimonial-container" style={{ textAlign: "center", maxWidth: "600px", margin: "0 auto" }}>
         <div className="testimonial-content">
           <h3>“{testimonials[index].review}”</h3>
           <p>Their expertise and dedication ensured a smooth and exceptional experience.</p>
           <p className="client-name">— {testimonials[index].name}, {testimonials[index].position}</p>
         </div>
       </div>
-      <div className="dots" style={{ marginTop: "20px" }}>
+      <div className="dots" style={{ marginTop: "10px" }}>
         {testimonials.map((_, i) => (
           <span
             key={i}
